@@ -1,0 +1,46 @@
+<ion-header>
+  <ion-toolbar color="tertiary">
+    <div class="ion-align-items-center ion-justify-content-center ion-text-center">
+      <img src="../../assets/img/gymbro (4).png" alt="logo" class="logo">          
+    </div>
+    <div class="progress-bar">
+      <ion-progress-bar type="indeterminate" color="success"></ion-progress-bar>
+    </div>  
+  </ion-toolbar>
+</ion-header>
+
+<br><br>
+
+<ion-content [fullscreen]="true" color="tertiary">
+  
+  <div class="container">
+
+    <ion-card color="light">
+      
+      <ion-card-header>
+        <ion-card-title>Bienvenido a GymBro</ion-card-title>
+        <ion-card-subtitle>Registrate con nosotros</ion-card-subtitle>
+      </ion-card-header>
+    
+      <ion-card-content>
+        <div class="correo">
+          <ion-input label="Correo Electrónico" label-placement="floating" fill="outline" placeholder="Ingrese Correo"></ion-input>
+        </div>
+        <br>
+        <div class="password">
+          <ion-input label="Contraseña" label-placement="floating" fill="outline" placeholder="Ingrese Contraseña" type="password"></ion-input>
+        </div>
+        <br>
+        <div class="boton">
+          <ion-button expand="block">Registrarse</ion-button>
+        </div>
+        <br>
+        <a [routerLink]="'/login'" style="text-decoration: none;">¿Ya tienes una cuenta?, Inicia sesión aquí</a>
+      </ion-card-content>
+    </ion-card>
+
+  </div>
+  
+</ion-content>
+
+
