@@ -1,0 +1,7 @@
+{
+  "name": "gymbroApp",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
