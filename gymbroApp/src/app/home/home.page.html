@@ -1,8 +1,4 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>Mi Perfil</ion-title>
-  </ion-toolbar>
-</ion-header>
+
 
 <ion-tabs #tabs (ionTabsDidChange)="setCurrentTab($event)">
 
@@ -10,22 +6,22 @@
 
     <ion-tab-button tab="rutinas">
       <ion-icon name="analytics-outline"></ion-icon>
-      <ion-label>Rutinas</ion-label>
+      <ion-label *ngIf="selectedTab=='rutinas'">Rutinas</ion-label>
     </ion-tab-button>
 
     <ion-tab-button tab="ejercicios">
       <ion-icon name="barbell-outline"></ion-icon>
-      <ion-label>Ejercicios</ion-label>
+      <ion-label *ngIf="selectedTab=='ejercicios'">Ejercicios</ion-label>
     </ion-tab-button>
 
     <ion-tab-button tab="search">
-      <ion-icon name="search"></ion-icon>
-      <ion-label>Buscar</ion-label>
+      <ion-icon name="search-outline"></ion-icon>
+      <ion-label *ngIf="selectedTab=='search'">Buscar</ion-label>
     </ion-tab-button>
 
     <ion-tab-button tab="menu">
-      <ion-icon name="menu"></ion-icon>
-      <ion-label>Menu</ion-label>
+      <ion-icon name="menu-outline"></ion-icon>
+      <ion-label *ngIf="selectedTab=='menu'">Menu</ion-label>
     </ion-tab-button>
 
   </ion-tab-bar>
